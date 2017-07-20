@@ -38,6 +38,7 @@ public class ZipkinConfig {
         Brave.Builder builder = new Brave.Builder(properties.getServiceName());  //指定state
         builder.spanCollector(spanCollector);
         builder.traceSampler(Sampler.ALWAYS_SAMPLE);
+        System.out.print("============mytest222222333333============");
         System.out.print("==========mytest222222==============");
         Brave brave = builder.build();
         return brave;
