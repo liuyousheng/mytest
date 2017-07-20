@@ -27,6 +27,7 @@ public class ZipkinConfig {
     public SpanCollector spanCollector() {
         HttpSpanCollector.Config config = HttpSpanCollector.Config.builder().connectTimeout(properties.getConnectTimeout()).readTimeout(properties.getReadTimeout())
                 .compressionEnabled(properties.isCompressionEnabled()).flushInterval(properties.getFlushInterval()).build();
+        System.out.print("========================");
         return HttpSpanCollector.create(properties.getUrl(), config, new EmptySpanCollectorMetricsHandler());
     }
 
