@@ -1,0 +1,4 @@
+com\lkl\zipkin\config\ZipkinProperties.class
+com\lkl\zipkin\config\ZipkinConfig.class
+com\lkl\zipkin\Application.class
+com\lkl\zipkin\controller\HomeController.class
