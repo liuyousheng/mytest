@@ -30,7 +30,7 @@ public class HomeController {
         TimeUnit.MILLISECONDS.sleep(sleep);
         Request request = new Request.Builder().url("http://localhost:9090/foo").get().build();
         Response response = client.newCall(request).execute();
-        return " [service1 sleep " + sleep+" ms]" + response.body().toString();
+        return " [service1 111sleep " + sleep+" ms]" + response.body().toString();
     }
 
 
